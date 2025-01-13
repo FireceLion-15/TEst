@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: darkblue;
+        }
+        p {
+            font-size: 18px;
+        }
+        button {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Thank you submitting your details</h1>
+    <p>You can redirect to form for another response or else you can visit youtube & relax!
+    Thank you!</p><br><br>
+    <button onclick="redirectToNextPage()">Go to Youtube</button><br><br>
+    <button onclick="redirectToYouTube()">Go Back to Form</button>
+    
+
+    <script>
+        function redirectToNextPage() {
+            window.location.href = "https://www.youtube.com"; // Replace with the URL of your form page   
+        }
+        function redirectToYouTube() {
+            window.location.href = "http://127.0.0.1:5500/Program7.html"
+
+
+        }
+    </script>
+</body>
+</html>
